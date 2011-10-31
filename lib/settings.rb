@@ -29,4 +29,8 @@ module Settings
     settings.include? name
   end
 
+  def set(name, value)
+    send :"#{name}=", value
+  end
+
 end
